@@ -88,21 +88,20 @@ print("Prediccion")
 #EN esta etapa, comienza la implementacion de del bot del telegram
 #el cual adquirimos el token, para darle la instruccion de que trabaje cuando le envia un audio
 
-
-bot = telebot.TeleBot("1943460407:AAFtrAwI7_Ji-TlUHVPzsDaCK2y8yvxCHFI")
-
-@bot.message_handler(content_types=['voice'])
-#lo que ejecuta es un proceso en el cual descarga el audio de telegram y lo guarda en la carpeta del proyecto
-def voice_processing(message):
-    file_info = bot.get_file(message.voice.file_id)
-    downloaded_file = bot.download_file(file_info.file_path)
-    with open('audio.wav', 'wb') as new_file:
-        new_file.write(downloaded_file)
-
-bot.polling()
-
 #lo que se hace luego es almacenar ese audio en un archivo  
 file = 'audio.wav'
+
+#bot = telebot.TeleBot("1943460407:AAFtrAwI7_Ji-TlUHVPzsDaCK2y8yvxCHFI")
+
+#@bot.message_handler(content_types=['voice'])
+#lo que ejecuta es un proceso en el cual descarga el audio de telegram y lo guarda en la carpeta del proyecto
+#def voice_processing(message):
+#    file_info = bot.get_file(message.voice.file_id)
+#    downloaded_file = bot.download_file(file_info.file_path)
+#    with open('audio.wav', 'wb') as new_file:
+#        new_file.write(downloaded_file)
+
+#bot.polling()
 
 ans = []
 #y enviarle ese archivo como paraetr para que lo analise
