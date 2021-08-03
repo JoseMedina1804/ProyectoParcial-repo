@@ -13,7 +13,7 @@ from sklearn.metrics import accuracy_score
 emotion_labels = {
   '01':'neutral',
   '02':'calmado',
-  '03':'positivo',
+  '03':'positivg',
   '04':'negativo',
   '05':'enojado',
   '06':'fearful',
@@ -21,7 +21,7 @@ emotion_labels = {
   '08':'surprised'
 }
 
-focused_emotion_labels = ['positivo', 'negativo']
+focused_emotion_labels = ['positivg', 'negativo']
 
 def audio_features(file_title, mfcc, chroma, mel):
     with sf.SoundFile(file_title) as audio_recording:
