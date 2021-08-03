@@ -92,7 +92,7 @@ print("Prediccion")
 bot = telebot.TeleBot("1943460407:AAFtrAwI7_Ji-TlUHVPzsDaCK2y8yvxCHFI")
 
 @bot.message_handler(content_types=['voice'])
-l#lo que ejecuta es un proceso en el cual descarga el audio de telegram y lo guarda en la carpeta del proyecto
+#lo que ejecuta es un proceso en el cual descarga el audio de telegram y lo guarda en la carpeta del proyecto
 def voice_processing(message):
     file_info = bot.get_file(message.voice.file_id)
     downloaded_file = bot.download_file(file_info.file_path)
