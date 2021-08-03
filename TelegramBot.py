@@ -45,7 +45,7 @@ def audio_features(file_title, mfcc, chroma, mel):
 def loading_audio_data():
     x = []
     y = []
-    for file in glob.glob("D:\Proyecto\Dadafile\Actor_*\*.wav"):
+    for file in glob.glob("D:\Dadafile\Actor_*\*.wav"):
 
         file_path=os.path.basename(file)
         emotion = emotion_labels[file_path.split("-")[2]]
