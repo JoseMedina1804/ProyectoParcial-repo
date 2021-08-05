@@ -169,7 +169,7 @@ bot = telebot.TeleBot("1943460407:AAFtrAwI7_Ji-TlUHVPzsDaCK2y8yvxCHFI")
 def bienvenidaa(message):
     bot.reply_to(message, "Envia un audio" ) 
 
-@bot.message_handler(commands=['preic'])
+@bot.message_handler(commands=['predic'])
 def bienvenidaa(message):
     bot.reply_to(message, "El estado es positivo" ) 
  
