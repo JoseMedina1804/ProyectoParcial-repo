@@ -153,7 +153,7 @@ def aextract_feature(file_name, **kwargs):
             result = np.hstack((result, tonnetz))
     return result
 
-filename = "03-01-02-01-02-02-21.wav"
+filename = "03-01-02-01-01-02-08.wav"
 
 new_features = aextract_feature(filename, mfcc=True, chroma=True, mel=True).reshape(1, -1)
 
